@@ -1614,7 +1614,7 @@ var VwLocationSelector = {
       geolocationRunning: true,
       markerCoordinates: this.initCoordinates[0] ? [this.initCoordinates[0], this.initCoordinates[1]] : [4.5, 50.7],  // the coordinates that will be passed to the map
       modelAddress: this.location ? '' + this.location : '',
-      _municipality: null,
+      _municipality: this.municipality, // initial data from prop
       provider: new GeoSearch.OpenStreetMapProvider({
         params: {
           countrycodes: 'BE'
@@ -1706,7 +1706,6 @@ var VwLocationSelector = {
     },
   },
   mounted: function () {
-    this._municipality = this.municipality;
     if (this.locationLng !== "") {
       this.locationDetectionBlocked = true;
     } else {
@@ -1727,7 +1726,7 @@ var VwLocationSelector = {
         v-bind:latitude-is-invalid="latitudeIsInvalid" v-bind:longitude-is-invalid="longitudeIsInvalid">
       </vw-location-selector-input>
 
-      <input type="hidden" id="id_municipality" name="municipality" v-bind:value="_municipality">
+      <input type="hidden" id="id_municipality" name="municipality" v-bind:value="$data._municipality">
 
       <div v-if="searchFailed" class="alert alert-warning alert-dismissible " role="alert">
         {{ locationNotFoundText }}
