@@ -265,7 +265,7 @@ class AbstractObservation(models.Model):
         abstract = True
         # We got some duplicates and don't exactly know why, this is an attempt to block them without being too
         # aggresive and introduce bugs (hence the limited number of fields).
-        unique_together = ['taxon', 'observation_time', 'latitude', 'longitude', 'comments']
+        unique_together = ['taxon', 'observation_time', 'latitude', 'longitude', 'comments', 'inaturalist_id']
 
     @property
     def vernacular_names_in_all_languages(self):
