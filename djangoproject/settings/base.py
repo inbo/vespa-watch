@@ -227,10 +227,11 @@ INATURALIST_PUSH = False
 # Notification emails
 
 EMAIL_TO_REPORTER_SENDER = 'vespawatch@inbo.be'
-EMAIL_TO_REPORTER_SUBJECT = 'Bedankt voor je melding op Vespa-Watch'
+EMAIL_TO_REPORTER_SUBJECT = 'Bedankt voor je melding op Vespa-Watch / Merci pour votre observation sur Vespa-Watch'
 EMAIL_TO_REPORTER_BODY = """
 <html>
 <body>
+    <small><p>(version française ci-dessous)</p></small>
     <p>Beste{observer_name},</p>
 
     <p>
@@ -272,6 +273,51 @@ EMAIL_TO_REPORTER_BODY = """
         worden enkel observaties in Vlaanderen gebruikt. Andere regio's en landen hebben vaak hun 
         <a href="https://vespawatch.be/about/links/">eigen invoerportalen</a> en 
         bestrijdingsprogramma's voor Aziatische hoornaar.
+        </p>
+    </small>
+    
+    <hr/>
+    
+    <p>Cher(e) {observer_name},</p>
+    
+    <p>
+        Merci pour votre observation sur <a href="https://vespawatch.be">Vespa-Watch</a>. Grâce à vous, nous pouvons faire le point 
+        sur l'invasion du frelon asiatique en Flandre.
+    </p>
+    
+    <p>
+        Votre observation est également disponible sur <a href="https://www.inaturalist.org/observations/{inat_id}">iNaturalist</a>, 
+        où elle peut être vérifiée par 
+        des bénévoles. Les observations comportant des photos inutilisables ou non prises par l'observateur 
+        seront supprimées. Gardez un œil sur <a href="https://www.inaturalist.org/observations/{inat_id}">cette page</a> pour savoir quelles espèces vous avez vues. 
+        Souhaitez-vous participer à l'identification et/ou transmettre des observations sous votre propre 
+        nom ? Créez alors un <a href="https://www.inaturalist.org/signup">compte iNaturalist</a>.
+    </p>
+    
+    <p>
+        Parlez du frelon asiatique à vos amis et connaissances et <a href="https://vespawatch.be/get-involved/">lisez ici</a> comment vous pouvez participer à ce projet. Un retour d'information ? Faites-le nous savoir en répondant à ce courriel.
+    </p>
+    
+    <p>
+        <b>Habitez-vous en Wallonie?</b> Pour les observations en Wallonie, nous recommandons de reporter l'information directement via <a href="http://biodiversite.wallonie.be/fr/le-frelon-asiatique.html?IDC=5999">ce formulaire</a>.
+    </p>
+    
+    <p>Bien à vous,</p>
+    <p>L'équipe de Vespa-Watch</p>
+    
+    <small>
+        <p>
+        Il s'agit d'un courriel unique et automatique envoyé lors d'une observation sur Vespa-Watch. 
+        Nous ne vous enverrons plus de courriels. Dans le cas d'un rapport vérifié d'un nid de 
+        frelons asiatiques, vous pourriez être contacté par des services de gestion. 
+        Voir notre <a href="https://vespawatch.be/about/privacy-policy/">politique de confidentialité</a>.
+        </p>
+        
+        <p>
+        Chaque rapport sur Vespa-Watch est disponible publiquement en tant que données ouvertes, 
+        mais seules les observations en Flandre sont utilisées pour la gestion de l'espèce. D'autres 
+        régions et pays ont souvent <a href="https://vespawatch.be/about/links/">leurs propres portails 
+        d'encodage</a> et programmes de contrôle.
         </p>
     </small>
 </body>
