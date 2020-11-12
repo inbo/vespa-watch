@@ -862,12 +862,6 @@ var VwManagementTableNestRow = {
       }
       return '';
     },
-    nestLatitude: function () {
-      return roundCoordinate(this.nest.latitude)
-    },
-    nestLongitude: function () {
-      return roundCoordinate(this.nest.longitude)
-    },
     observationTimeStr: function () {
       return moment(this.nest.observation_time).format('lll');
     }
@@ -882,8 +876,6 @@ var VwManagementTableNestRow = {
   template: `
     <tr :class="nestClass">
       <td>{{ observationTimeStr }}</td>
-      <td>{{ nestLongitude}}</td>
-      <td>{{ nestLatitude }}</td>
       <td>{{ nest.municipality }}</td>
       <td>
         {{ nest.action }}
@@ -931,15 +923,11 @@ var VwManagementTable = {
     filterLabel: function () {
       return gettext('Filter');
     },
-    latitudeStr: function () {
-      return gettext('Latitude');
-    },
+
     loadingStr: function () {
       return gettext('Loading...');
     },
-    longitudeStr: function () {
-      return gettext('Longitude');
-    },
+
     managementStr: function () {
       return gettext('Management');
     },
@@ -1035,7 +1023,7 @@ var VwManagementTable = {
         <table v-if="nests && nests.length > 0" class="table">
           <thead>
             <tr>
-              <th>{{ dateStr }}</th><th>{{ longitudeStr }}</th><th>{{ latitudeStr }}</th><th>{{ municipalityStr }}</th><th>{{ managementStr }}</th><th>{{ detailsStr }}</th>
+              <th>{{ dateStr }}</th><th>{{ municipalityStr }}</th><th>{{ managementStr }}</th><th>{{ detailsStr }}</th>
             </tr>
           </thead>
 

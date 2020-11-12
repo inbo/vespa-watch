@@ -118,7 +118,7 @@ External Javascript libraries (and their CSS) are defined in [`package.json`](pa
 
 1. Go to [`assets/js`](assets/js)
 2. Update the relevant `.js` files
-3. Copy the files automatically on every changes with `npm run watch:js` (or once with `npm run copy:custom-js`)
+3. Copy the files automatically on every change with `npm run watch:js` (or once with `npm run copy:custom-js`)
 
 ### Update images
 
