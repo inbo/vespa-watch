@@ -10,6 +10,10 @@
 <main class="container" id="vw-main-app">
   <h1>{% trans 'Nest' %} {{ nest.id }} - {{ nest.observation_time }}</h1>
 
+  {% if nest.inaturalist_obs_url %}
+    <p class="text-right"><a class="btn btn-success" href="{{ nest.inaturalist_obs_url }}">{% trans 'View on iNaturalist' %}</a></p>
+  {% endif %}
+
   <h5>{% trans 'Taxon' %}</h5>
   <p>{{ nest.taxon }}</p>
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-15 14:39+0200\n"
+"POT-Creation-Date: 2020-11-13 09:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,22 +37,22 @@ msgstr ""
 "\">privacybeleid</a>"
 
 #: vespawatch/forms.py:37 vespawatch/forms.py:74 vespawatch/models.py:253
-#: vespawatch/templates/vespawatch/nest_detail.html:56
+#: vespawatch/templates/vespawatch/nest_detail.html:60
 msgid "Email address"
 msgstr "E-mailadres"
 
 #: vespawatch/forms.py:70 vespawatch/models.py:564
-#: vespawatch/templates/vespawatch/nest_detail.html:31
+#: vespawatch/templates/vespawatch/nest_detail.html:35
 msgid "Nest height"
 msgstr "Nesthoogte"
 
 #: vespawatch/forms.py:73 vespawatch/models.py:252
-#: vespawatch/templates/vespawatch/nest_detail.html:48
+#: vespawatch/templates/vespawatch/nest_detail.html:52
 msgid "Name"
 msgstr "Naam"
 
 #: vespawatch/forms.py:75 vespawatch/models.py:254 vespawatch/models.py:775
-#: vespawatch/templates/vespawatch/nest_detail.html:52
+#: vespawatch/templates/vespawatch/nest_detail.html:56
 msgid "Telephone number"
 msgstr "Telefoonnummer"
 
@@ -75,7 +75,7 @@ msgstr "Volgorde"
 #: vespawatch/models.py:100 vespawatch/models.py:771
 #: vespawatch/templates/vespawatch/individual_create.html:76
 #: vespawatch/templates/vespawatch/nest_create.html:76
-#: vespawatch/templates/vespawatch/nest_detail.html:29
+#: vespawatch/templates/vespawatch/nest_detail.html:33
 msgid "Description"
 msgstr "Beschrijving"
 
@@ -88,7 +88,7 @@ msgid "Observation date"
 msgstr "Datum van observatie"
 
 #: vespawatch/models.py:242 vespawatch/models.py:746
-#: vespawatch/templates/vespawatch/nest_detail.html:43
+#: vespawatch/templates/vespawatch/nest_detail.html:47
 msgid "Comments"
 msgstr "Opmerkingen"
 
@@ -100,11 +100,11 @@ msgstr ""
 "Opmerkingen zijn publiek: gebruik ze om je observatie te beschrijven en "
 "verificatie te vergemakkelijken."
 
-#: vespawatch/models.py:244 vespawatch/templates/vespawatch/nest_detail.html:24
+#: vespawatch/models.py:244 vespawatch/templates/vespawatch/nest_detail.html:28
 msgid "Latitude"
 msgstr "Latitude"
 
-#: vespawatch/models.py:245 vespawatch/templates/vespawatch/nest_detail.html:24
+#: vespawatch/models.py:245 vespawatch/templates/vespawatch/nest_detail.html:28
 msgid "Longitude"
 msgstr "Longitude"
 
@@ -128,7 +128,7 @@ msgstr "Minder dan 25cm"
 msgid "More than 25cm"
 msgstr "Meer dan 25cm"
 
-#: vespawatch/models.py:556 vespawatch/templates/vespawatch/nest_detail.html:35
+#: vespawatch/models.py:556 vespawatch/templates/vespawatch/nest_detail.html:39
 msgid "Nest size"
 msgstr "Nestgrootte"
 
@@ -140,11 +140,11 @@ msgstr "Lager dan 4 meter"
 msgid "Above 4 meters"
 msgstr "Hoger dan 4 meter"
 
-#: vespawatch/models.py:565 vespawatch/templates/vespawatch/nest_detail.html:39
+#: vespawatch/models.py:565 vespawatch/templates/vespawatch/nest_detail.html:43
 msgid "Confirmed by expert"
 msgstr "Bevestigd door expert"
 
-#: vespawatch/models.py:566 vespawatch/templates/vespawatch/nest_detail.html:17
+#: vespawatch/models.py:566 vespawatch/templates/vespawatch/nest_detail.html:21
 msgid "Municipality"
 msgstr "Gemeente"
 
@@ -448,19 +448,19 @@ msgstr ""
 
 #: vespawatch/templates/vespawatch/individual_create.html:48
 #: vespawatch/templates/vespawatch/nest_create.html:46
-#: vespawatch/templates/vespawatch/nest_detail.html:16
+#: vespawatch/templates/vespawatch/nest_detail.html:20
 msgid "Location"
 msgstr "Locatie"
 
 #: vespawatch/templates/vespawatch/individual_create.html:63
 #: vespawatch/templates/vespawatch/nest_create.html:63
-#: vespawatch/templates/vespawatch/nest_detail.html:26
+#: vespawatch/templates/vespawatch/nest_detail.html:30
 msgid "Date"
 msgstr "Datum"
 
 #: vespawatch/templates/vespawatch/individual_create.html:89
 #: vespawatch/templates/vespawatch/nest_create.html:94
-#: vespawatch/templates/vespawatch/nest_detail.html:46
+#: vespawatch/templates/vespawatch/nest_detail.html:50
 msgid "Contact information"
 msgstr "Contactinformatie"
 
@@ -468,7 +468,11 @@ msgstr "Contactinformatie"
 msgid "Reported nests of Asian hornet"
 msgstr "Gerapporteerde nesten van Aziatische hoornaar"
 
-#: vespawatch/templates/vespawatch/nest_detail.html:13
+#: vespawatch/templates/vespawatch/nest_detail.html:14
+msgid "View on iNaturalist"
+msgstr "Bekijk op iNaturalist"
+
+#: vespawatch/templates/vespawatch/nest_detail.html:17
 msgid "Taxon"
 msgstr "Taxon"
 

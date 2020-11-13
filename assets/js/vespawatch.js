@@ -877,12 +877,13 @@ var VwManagementTableNestRow = {
     <tr :class="nestClass">
       <td>{{ observationTimeStr }}</td>
       <td>{{ nest.municipality }}</td>
+      <td><a target="_blank" :href="nest.inaturalist_url">{{ nest.inaturalist_id }}</a></td>
+      <td>
+        <a :href="nest.detailsUrl" target="_blank">{{ detailsStr }}</a>
+      </td>
       <td>
         {{ nest.action }}
         <vw-management-action-edit-buttons :nest-id="nest.id" :action-id="nest.actionId" v-on:data-changed="dataChanged" :editable="nest.editable"></vw-management-action-edit-buttons>
-      </td>
-      <td>
-        <a :href="nest.detailsUrl" target="_blank" class="btn btn-outline-info btn-sm">{{ detailsStr }}</a>
       </td>
     </tr>
     `
@@ -906,6 +907,9 @@ var VwManagementTable = {
       let currentPageStart = this.pageIndex * this.pageSize;
       let currentPageEnd = currentPageStart + this.pageSize;
       return this.filteredNests.slice(currentPageStart, currentPageEnd);
+    },
+    inatIDStr: function () {
+      return gettext('iNaturalist');
     },
     dateStr: function () {
       return gettext('Date');
@@ -1023,7 +1027,11 @@ var VwManagementTable = {
         <table v-if="nests && nests.length > 0" class="table">
           <thead>
             <tr>
-              <th>{{ dateStr }}</th><th>{{ municipalityStr }}</th><th>{{ managementStr }}</th><th>{{ detailsStr }}</th>
+              <th>{{ dateStr }}</th>
+              <th>{{ municipalityStr }}</th>
+              <th>{{ inatIDStr }}</th>
+              <th>{{ detailsStr }}</th>
+              <th>{{ managementStr }}</th>
             </tr>
           </thead>
 
