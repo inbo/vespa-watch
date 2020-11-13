@@ -10,6 +10,11 @@ from .models import Taxon, Nest, Individual, NestPicture, IndividualPicture, Man
     IndividualObservationWarning, NestObservationWarning, Profile
 
 
+class ManagementActionResource(resources.ModelResource):
+    class Meta:
+        model = ManagementAction
+
+
 class NestResource(resources.ModelResource):
     taxon_name = Field(attribute='taxon__name', column_name='taxon_name')
 
@@ -152,7 +157,7 @@ class IndividualAdmin(DeleteObjectsOneByOneMixin, ExportMixin, admin.ModelAdmin)
 
 
 @admin.register(ManagementAction)
-class ManagementActionAdmin(admin.ModelAdmin):
+class ManagementActionAdmin(ExportMixin, admin.ModelAdmin):
     pass
 
 
