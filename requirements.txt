@@ -10,7 +10,7 @@ django-cleanup==5.0.0
 django-appconf==1.0.2
 django-constance==2.6.0
 django-crispy-forms==1.8.1
-django-debug-toolbar==1.11
+django-debug-toolbar==1.11.1
 -e git+https://github.com/niconoe/django-imagekit.git@b09496b05d84577d43751a10f838d0c527b6db32#egg=django_imagekit
 django-import-export==2.0.2
 django-markdownx==3.0.1
